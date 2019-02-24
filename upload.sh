@@ -3,10 +3,10 @@ git stash
 git pull origin master --tags
 git stash pop
 
-VersionString=`grep -E 's.version.*=' ZExtManager.podspec`
+VersionString=`grep -E 's.version.*=' BaseBusiness.podspec`
 VersionNumber=`tr -cd 0-9 <<<"$VersionString"`
 NewVersionNumber=$(($VersionNumber + 1))
-LineNumber=`grep -nE 's.version.*=' ZExtManager.podspec | cut -d : -f1`
+LineNumber=`grep -nE 's.version.*=' BaseBusiness.podspec | cut -d : -f1`
 sed -i "" "${LineNumber}s/${VersionNumber}/${NewVersionNumber}/g" CTNetworkingSwift.podspec
 
 echo "current version is ${VersionNumber}, new version is ${NewVersionNumber}"
@@ -15,4 +15,4 @@ echo "current version is ${VersionNumber}, new version is ${NewVersionNumber}"
 git commit -am ${NewVersionNumber}
 git tag ${NewVersionNumber}
 git push origin master --tags
-pod trunk push ./ZExtManager.podspec --verbose --use-libraries --allow-warnings --use-modular-headers
+pod trunk push ./BaseBusiness.podspec --verbose --use-libraries --allow-warnings --use-modular-headers
