@@ -7,7 +7,7 @@ VersionString=`grep -E 's.version.*=' BaseBusiness.podspec`
 VersionNumber=`tr -cd 0-9 <<<"$VersionString"`
 NewVersionNumber=$(($VersionNumber + 1))
 LineNumber=`grep -nE 's.version.*=' BaseBusiness.podspec | cut -d : -f1`
-sed -i "" "${LineNumber}s/${VersionNumber}/${NewVersionNumber}/g" CTNetworkingSwift.podspec
+sed -i "" "${LineNumber}s/${VersionNumber}/${NewVersionNumber}/g" BaseBusiness.podspec
 
 echo "current version is ${VersionNumber}, new version is ${NewVersionNumber}"
 
