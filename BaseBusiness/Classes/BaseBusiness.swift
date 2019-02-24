@@ -9,6 +9,12 @@ import UIKit
 
 open class BaseBusiness: NSObject {
 
+    var host: String = ""
+    
+    public init(_ host: String) {
+        self.host = host
+        super.init()
+    }
     
     open func businessJob(_ str: String,params: Array<Any>) -> Any? {
         return nil

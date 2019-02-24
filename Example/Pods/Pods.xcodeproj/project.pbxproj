@@ -11,6 +11,7 @@
 		736F76C56AF9762892519B000D5AE79A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		804A347BC4D5E15331DD4DE218D805A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		8635E0F12222D9D300400D5C /* BaseBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8635E0F02222D9D300400D5C /* BaseBusiness.swift */; };
+		8635E13C2222EC5400400D5C /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8635E13B2222EC5400400D5C /* Bus.swift */; };
 		874C1B82531080DC9B76A07900CE0A54 /* Pods-BaseBusiness_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F185DF126221F6AA7D98B0459976AD /* Pods-BaseBusiness_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9870168AF3CBBD68888A746A60E9C119 /* Pods-BaseBusiness_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4906D65385905AD3CAA51983F4EB3EFF /* Pods-BaseBusiness_Example-dummy.m */; };
 		9F65C300EA5B2957D32CA6976537D9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
@@ -52,6 +53,7 @@
 		6F8C2FE4BA3CF9F07D04CFED98784299 /* Pods-BaseBusiness_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BaseBusiness_Tests.modulemap"; sourceTree = "<group>"; };
 		81256B094A475CFFB1BDFA6052FC0272 /* BaseBusiness.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = BaseBusiness.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8635E0F02222D9D300400D5C /* BaseBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseBusiness.swift; path = BaseBusiness/Classes/BaseBusiness.swift; sourceTree = "<group>"; };
+		8635E13B2222EC5400400D5C /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bus.swift; path = BaseBusiness/Classes/Bus.swift; sourceTree = "<group>"; };
 		8C2B7BD50FB0F73013328B6A9C919465 /* Pods-BaseBusiness_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseBusiness_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		90148D853E2CC6C9C6377DEBCC007280 /* Pods-BaseBusiness_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseBusiness_Example-resources.sh"; sourceTree = "<group>"; };
 		920AFEFB057BA3DBF60B4F1CCDF68D52 /* Pods-BaseBusiness_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BaseBusiness_Example.modulemap"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		1E8619D0A7DDCE086C5DFEF8A25AFBCF /* BaseBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				8635E13B2222EC5400400D5C /* Bus.swift */,
 				8635E0F02222D9D300400D5C /* BaseBusiness.swift */,
 				C9F8DD15A8E828CA01589EF39750FFCB /* Pod */,
 				8F32A94449DE8C8C8877E9ACB7881482 /* Support Files */,
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8635E13C2222EC5400400D5C /* Bus.swift in Sources */,
 				8635E0F12222D9D300400D5C /* BaseBusiness.swift in Sources */,
 				A8CD3611AF7CBF9C085B1700E417AD72 /* BaseBusiness-dummy.m in Sources */,
 			);
