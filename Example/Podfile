@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BaseBusiness_Example' do
+  pod 'BaseBusiness', :path => '../'
+
+  target 'BaseBusiness_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
