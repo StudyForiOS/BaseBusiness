@@ -1,0 +1,16 @@
+PODS:
+  - BaseBusiness (0.1.0)
+
+DEPENDENCIES:
+  - BaseBusiness (from `../`)
+
+EXTERNAL SOURCES:
+  BaseBusiness:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BaseBusiness: c0fe381bf500725db2e77e0fe71db08d5af509dc
+
+PODFILE CHECKSUM: 8ab7f2a01db04c0d544202fef8acf5749d004df9
+
+COCOAPODS: 1.5.3
