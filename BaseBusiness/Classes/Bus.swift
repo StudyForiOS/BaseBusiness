@@ -55,31 +55,23 @@ open class Bus: NSObject {
         return business
     }
     
-    public class func callData(_ busName: String,param: AnyObject...) throws -> Any {
+    public class func callData(_ busName: String,params: Any...) throws -> Any? {
         
-        let baseBusiness = Bus .busObjectForName(busName)
+        let baseBusiness = Bus.busObjectForName(busName)
         
-        guard baseBusiness != nil else {
+        guard let bus = baseBusiness else {
             throw BusError.BusinessNil
         }
         
-        var params = Array<AnyObject>()
+        let ret = bus.businessJob(busName, params: params)
         
-        var eachItem: AnyObject?
         
-        var argumentList: va_list?
         
-//        if param != nil {
-//            var paramArray = Array<AnyObject>()
-//            paramArray.append(param as AnyObject)
-//            va_start(argumentList,param)
-//
-//
+//        params.forEach { (item) in
+//            paramsArr.append(item)
 //        }
         
-        
-        
-        return "nil"
+        return ret
     }
 
 }
