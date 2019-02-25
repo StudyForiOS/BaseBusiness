@@ -11,7 +11,7 @@ open class BaseBusiness: NSObject {
 
     var host: String = ""
     
-    public init(_ host: String) {
+    required public init(_ host: String) {
         self.host = host
         super.init()
     }
